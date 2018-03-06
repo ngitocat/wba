@@ -1,0 +1,8 @@
+<!DOCTYPE>
+<html><meta charset="utf-8"><body>
+<script>
+ document.addEventListener('click', event => navigator.bluetooth.requestDevice({ filters: [{ services: ['battery_service'] }] })
+.then(device => { /* ... */ })
+.catch(error => { console.log(error); }))
+</script>
+</body></html>
